@@ -4,8 +4,8 @@ variable "repository" {
 }
 
 variable "branch" {
-  type        = list(string)
-  description = "(list of strings): (Optional) Git branch. Defaults to the repository's default branch."
+  type        = string
+  description = "(String): (Required) Git branch. Defaults to the repository's default branch."
 }
 
 variable "file_names" {
