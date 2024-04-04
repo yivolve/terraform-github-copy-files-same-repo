@@ -16,5 +16,5 @@ variable "source_file_names" {
 variable "target_path" {
   type        = string
   description = "(String): (Required) Path to where the file will be copied."
-  default = ""
+  default     = ""
 }
