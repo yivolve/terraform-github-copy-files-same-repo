@@ -4,11 +4,17 @@ variable "repository" {
 }
 
 variable "branch" {
-  type        = list(string)
-  description = "(list of strings): (Optional) Git branch. Defaults to the repository's default branch."
+  type        = string
+  description = "(String): (Required) Git branch. Defaults to the repository's default branch."
 }
 
-variable "file_names" {
+variable "source_file_names" {
   type        = list(string)
-  description = "(list of strings): (Required) Name of files to move"
+  description = "(list of strings): (Required) Source files to copy."
+}
+
+variable "target_path" {
+  type        = string
+  description = "(String): (Required) Path to where the file will be copied."
+  default     = ""
 }
