@@ -1,4 +1,4 @@
-data "github_repository_file" "this" {
+resource "github_repository_file" "this" {
   count      = length(var.file_names)
   repository = var.repository
   branch     = var.branch
